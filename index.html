@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>animales</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/acciones.js"></script>
+     <!--necesario*/ -->
+ <script src="phonegap.js"></script>
+<style>
+ #principal{
+	         position:absolute;
+			 left:0;
+			 top:0;
+			 width:100%;
+			 background:#09F;
+ }
+ #pantalla{
+	      float:left;
+		  width:100%;
+		  height:25%;
+		  background:#0CF;
+		  text-align:center;
+		  font-size:4em;
+		  font-weight:bold;
+		  font-family:Verdana, Geneva, sans-serif;
+ }
+ #teclado{
+	 float:left;
+	 width:100%;
+	 height:75%;
+ }
+ .nota{
+	 position:relative;
+	 float:left;
+	 height:90%;
+	 outline:#000 solid 1px;
+	 background:#FF0;
+	 width:50%;
+ }
+.TITULO {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+	color: #F03;
+	text-align: center;
+}
+ .textonota{
+	 position:relative;
+	 top:80%;
+	 text-align:center;
+	 font-size:2em;
+	 font-weight:bold;
+	 font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	 color:#FFCC00
+ }
+ 
+ .tocada{
+	 color:#300;
+	 background:#F00;
+	 outline:solid 1px #FF0000;
+	 }
+	 
+ .capas {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF3366;
+	border: medium solid  #FF3399;
+	outline:#060 solid 20px;
+}
+ </style>
+<script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+</head> 
+<body>
+<!--<input align="center" name="buttonCerrar" type="button" onClick="cerrar()" value="Salir" width="20px" heigth="50px" />-->
+<div data-role="page" id="page" style="background-image:url(imags/descarga.jpg)">
+	<div data-role="header">
+		<h1>A DIVERTISCE</h1>
+		
+		
+		
+	</div>
+	<div data-role="content">
+	<div data-role="content" style="background-image:url(imags/fondo7.jpg)">
+    <div align="center" class="TITULO">ANIMALES</div>
+    <div align="center" data-role="controlgroup" data-type="vertical">
+    <div style="width:20%">
+    <a href="#page2" data-role="button" id="anidom">
+	<div data-role="content" style="background-image:url(imags/fondo2.jpg)">
+    DOMESTICOS
+    </a>
+    <a href="#page3" data-role="button" id="anisal">
+    SALVAJES
+    </a>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>	 
+	<div data-role="footer">
+	  <h4>C.B.T.i.s.#86</h4>
+      	  <input align="center" name="buttonCerrar" type="button" onClick="javascript:window.close();" value="Salir" width="20px" heigth="50px" />
+	</div>
+	<!-- <p align="right">
+		<span class="textonota">
+			
+		</span>                           
+	</p> -->
+
+</div>
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header">
+	<div data-role="content" style="background-image:url(imags/fondo1.jpg)">
+		<h1>animales domesticos</h1>
+	</div>
+	<div data-role="content">	
+   <div align="center"><img src="imags/gato.jpg" width="242" height="323" class="capas"><img src="imags/gallo.jpg" width="242"   height="323" class="capas"><img src="imags/perro.jpg" width="242" height="323" class="capas" style="vertical-align:top"> </div>
+   <p align="center">    <img src="imags/pato.jpg" width="242"  height="323" class="capas">    <img src="imags/puerco.jpg" width="242" height="323" class="capas" style="vertical-align:top"> <img src="imags/caballo.jpg" width="242" height="323" class="capas">    </div>
+	<div data-role="footer">
+		<h4>ulises urbina</h4>
+	</div>
+</div>
+</div>
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>ANIMALLES SALVAJES</h1>
+	</div>
+	<div data-role="content">	
+	<div align="center"><img src="imags/leon.jpg" width="424" height="323"	 class="capas"> 
+    <img src="imags/tigre.jpg" width="424" height="323" class="capas">
+     <img src="imags/elefante.jpg" width="424" height="323" class="capas" style="vertical-align:top"> 
+     <img src="imags/gorila.jpg" width="424" height="323" class="capas" style="vertical-align:top">
+     <img src="imags/jirafa.jpg" width="424" height="323"  class="capas">
+     <img src="imags/tucan.jpg" width="424" height="323" class="capas">  
+     </div>
+	<div data-role="footer">
+		<h4>ulises urbina</h4>
+	</div>
+</div>
+
+</body>
+</html>
